@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple Calculator"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/inputN1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Input number here"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/inputN2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Input number here"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <RadioGroup
+        android:id="@+id/operator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/oprAdd"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="+" />
+
+        <RadioButton
+            android:id="@+id/oprSubtract"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <RadioButton
+            android:id="@+id/oprMultiply"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="×" />
+
+        <RadioButton
+            android:id="@+id/oprDivide"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="÷" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:text="Total" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="12dp"
+        android:textAlignment="viewEnd"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
